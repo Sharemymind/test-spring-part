@@ -1,10 +1,12 @@
 package org.spring.framework.beans;
 
-import org.spring.framework.beans.PropertyValue;
 
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ *org.springframework.beans.MutablePropertyValues
+ */
 public class PropertyValues {
 
     private final List<PropertyValue> propertyValueList = new ArrayList<PropertyValue>();

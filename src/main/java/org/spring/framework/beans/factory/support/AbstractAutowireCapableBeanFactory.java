@@ -68,7 +68,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
                 BeanReference beanReference = (BeanReference) value;
                 value = getBean(beanReference.getBeanName());
             }
-
+            //反射设置属性
             BeanUtil.setFieldValue(bean, name, value);
         }
     }
