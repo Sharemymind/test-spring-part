@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  *org.springframework.beans.factory.support.DefultListableBeanFactroy
  */
-public class DefultListableBeanFactroy extends AbstractAutowireCapableBeanFactory implements BeanDefinitionRegistry {
+public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFactory implements BeanDefinitionRegistry {
 
     /**
      * private final Map<String, BeanDefinition> beanDefinitionMap = new ConcurrentHashMap<>(256);
@@ -28,5 +28,10 @@ public class DefultListableBeanFactroy extends AbstractAutowireCapableBeanFactor
     @Override
     public void registerBeanDefinition(String beanName, BeanDefinition beanDefinition) {
         beanDefinitionMap.put(beanName, beanDefinition);
+    }
+
+    @Override
+    public boolean containsBeanDefinition(String beanName) {
+        return beanDefinitionMap.containsKey(beanName);
     }
 }

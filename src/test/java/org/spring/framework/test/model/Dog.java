@@ -1,4 +1,4 @@
-package model;
+package org.spring.framework.test.model;
 
 public class Dog {
     private String name;

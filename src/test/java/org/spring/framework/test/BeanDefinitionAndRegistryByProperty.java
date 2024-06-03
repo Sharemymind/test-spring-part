@@ -1,17 +1,19 @@
-import model.Dog;
-import model.Person;
+package org.spring.framework.test;
+
+import org.spring.framework.beans.factory.support.DefaultListableBeanFactory;
+import org.spring.framework.test.model.Dog;
+import org.spring.framework.test.model.Person;
 import org.junit.Test;
 import org.spring.framework.beans.PropertyValue;
 import org.spring.framework.beans.PropertyValues;
 import org.spring.framework.beans.factory.config.BeanDefinition;
 import org.spring.framework.beans.factory.config.BeanReference;
-import org.spring.framework.beans.factory.support.DefultListableBeanFactroy;
 
 public class BeanDefinitionAndRegistryByProperty {
 
     @Test
     public void testBeanDefinitionAndRegistry() {
-        DefultListableBeanFactroy  def = new DefultListableBeanFactroy();
+        DefaultListableBeanFactory def = new DefaultListableBeanFactory();
 
         PropertyValues propertyValues = new PropertyValues();
         PropertyValue age = new PropertyValue("age", "3");
@@ -30,7 +32,7 @@ public class BeanDefinitionAndRegistryByProperty {
 
     @Test
     public void testBeanDefinitionAndRegistry2() {
-        DefultListableBeanFactroy  def = new DefultListableBeanFactroy();
+        DefaultListableBeanFactory  def = new DefaultListableBeanFactory();
         PropertyValues propertyValues = new PropertyValues();
         PropertyValue age = new PropertyValue("age", "3");
         PropertyValue name = new PropertyValue("name", "BigDog");

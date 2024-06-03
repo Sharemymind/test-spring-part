@@ -1,4 +1,4 @@
-
+package org.spring.framework.test;
 
 public class TestSimpleBeanFactory {
 

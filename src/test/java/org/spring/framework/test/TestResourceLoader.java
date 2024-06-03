@@ -1,3 +1,5 @@
+package org.spring.framework.test;
+
 import cn.hutool.core.io.IoUtil;
 import org.junit.Test;
 import org.spring.framework.core.io.DefaultResourceLoader;

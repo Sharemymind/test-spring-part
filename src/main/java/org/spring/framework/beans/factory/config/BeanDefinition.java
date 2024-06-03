@@ -22,7 +22,7 @@ public class BeanDefinition {
     }
 
     public PropertyValues getPropertyValue() {
-        return propertyValue;
+        return propertyValue == null ? new PropertyValues() : propertyValue;
     }
 
     public void setPropertyValue(PropertyValues propertyValue) {
